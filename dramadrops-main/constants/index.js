@@ -21,7 +21,7 @@ export const sidebarLinks = [
     id: "create-thread",
     imgURL: "/assets/create.svg",
     route: "/create-thread",
-    label: "Create Thread",
+    label: "Create Drop",
   },
   {
     id: "communities",
