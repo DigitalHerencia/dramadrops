@@ -186,7 +186,7 @@ module.exports = {
         "light-2": "#EFEFEF",
         "light-3": "#730437",
         "light-4": "#730437",
-        "gray-1": "#697C89",
+        "gray-1": "#0e0e12",
         "glassmorphism": "rgba(16, 16, 18, 0.60)",
       },
       boxShadow: {
