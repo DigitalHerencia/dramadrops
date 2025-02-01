@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://github.com/DigitalHerencia/dramadrops/blob/main/dramadrops-main/public/logo.png?raw=true" alt="Project Banner">
+      <img src="https://raw.githubusercontent.com/DigitalHerencia/dramadrops/refs/heads/main/public/logo.png" alt="Project Banner">
   <br />
 
   <div>
@@ -1757,7 +1757,7 @@ Below are some screenshots of the application.
 
 #### Login Page
 
-<img src="https://github.com/DigitalHerencia/dramadrops/blob/main/dramadrops-main/public/login.jpeg?raw=true" alt="Login Page">
+<img src="https://raw.githubusercontent.com/DigitalHerencia/dramadrops/refs/heads/main/public/login.jpeg" alt="Login Page">
 </div>
 
 > Experience seamless authentication with Clerk. Our platform offers robust and secure login features, ensuring your user data is protected. Dive in to explore how Clerk can streamline your user management process.
@@ -1766,7 +1766,7 @@ Below are some screenshots of the application.
 
 #### Home Page
 
-<img src="https://github.com/DigitalHerencia/dramadrops/blob/main/dramadrops-main/public/home.jpeg?raw=true" alt="Home Page">
+<img src="https://raw.githubusercontent.com/DigitalHerencia/dramadrops/refs/heads/main/public/home.jpeg" alt="Home Page">
 
 </div>
 
@@ -1776,7 +1776,7 @@ Below are some screenshots of the application.
 
 #### Profile Page
 
-<img src="https://github.com/DigitalHerencia/dramadrops/blob/main/dramadrops-main/public/profile.jpeg?raw=true" alt="Profile Page">
+<img src="https://raw.githubusercontent.com/DigitalHerencia/dramadrops/refs/heads/main/public/profile.jpeg" alt="Profile Page">
 
 </div>
 
