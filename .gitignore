@@ -19,6 +19,8 @@
 .DS_Store
 *.pem
 compileAnthology.ts
+anthology.md 
+anthology.log 
 
 # debug
 npm-debug.log*

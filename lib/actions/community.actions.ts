@@ -1,6 +1,6 @@
 "use server";
 
-import { FilterQuery, SortOrder } from "mongoose";
+import mongoose, { FilterQuery, SortOrder } from "mongoose";
 
 import Community from "../models/community.model";
 import Thread from "../models/thread.model";
@@ -53,7 +53,9 @@ export async function fetchCommunityDetails(id: string) {
   try {
     connectToDB();
 
-    const communityDetails = await Community.findOne({ id }).populate([
+    const communityDetails = await Community.findOne({
+      _id: new mongoose.Types.ObjectId(id), // Convert string to ObjectId
+    }).populate([
       "createdBy",
       {
         path: "members",
@@ -63,8 +65,8 @@ export async function fetchCommunityDetails(id: string) {
     ]);
 
     return communityDetails;
-  } catch (error) {
-    // Handle any errors
+  } catch (error)
+  {
     console.error("Error fetching community details:", error);
     throw error;
   }
