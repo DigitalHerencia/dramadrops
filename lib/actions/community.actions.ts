@@ -53,9 +53,8 @@ export async function fetchCommunityDetails(id: string) {
   try {
     connectToDB();
 
-    const communityDetails = await Community.findOne({
-      _id: new mongoose.Types.ObjectId(id), // Convert string to ObjectId
-    }).populate([
+    const query = mongoose.Types.ObjectId.isValid(id) ? { _id: id } : { id };
+    const communityDetails = await Community.findOne(query).populate([
       "createdBy",
       {
         path: "members",

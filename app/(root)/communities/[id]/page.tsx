@@ -14,7 +14,9 @@ async function Page({ params }: { params: { id: string } }) {
   const user = await currentUser();
   if (!user) return null;
 
-  const communityDetails = await fetchCommunityDetails(params.id);
+  const communityId = String(params.id); // Ensure id is a string
+  const communityDetails = await fetchCommunityDetails(communityId);
+
 
   return (
     <section>
