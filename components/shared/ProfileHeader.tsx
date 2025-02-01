@@ -4,6 +4,7 @@ import Image from "next/image";
 interface Props {
   accountId: string;
   authUserId: string;
+  name: string;
   username: string;
   imgUrl: string;
   bio: string;
@@ -13,6 +14,7 @@ interface Props {
 function ProfileHeader({
   accountId,
   authUserId,
+  name,
   username,
   imgUrl,
   bio,
@@ -33,8 +35,9 @@ function ProfileHeader({
 
           <div className='flex-1'>
             <h2 className='text-left text-heading3-bold text-light-1'>
-              {username}
+              {name}
             </h2>
+            <p className='text-base-medium text-gray-1'>@{username}</p>
           </div>
         </div>
         {accountId === authUserId && type !== "Community" && (
