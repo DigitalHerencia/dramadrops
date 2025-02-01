@@ -14,14 +14,12 @@ async function Page({ params }: { params: { id: string } }) {
   const user = await currentUser();
   if (!user) return null;
 
-  const communityId = String(params.id); // Ensure id is a string
-  const communityDetails = await fetchCommunityDetails(communityId);
-
+  const communityDetails = await fetchCommunityDetails(params.id);
 
   return (
     <section>
       <ProfileHeader
-        accountId={communityDetails.createdBy._id.toString()} // Ensure it's a string
+        accountId={communityDetails.createdBy.id}
         authUserId={user.id}
         name={communityDetails.name}
         username={communityDetails.username}
