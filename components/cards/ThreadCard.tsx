@@ -105,7 +105,7 @@ function ThreadCard({
 
               {isComment && comments.length > 0 && (
                 <Link href={`/thread/${id}`}>
-                  <p className='mt-1 text-subtle-medium text-gray-1'>
+                  <p className='mt-1 text-subtle-medium text-light-2'>
                     {comments.length} repl{comments.length > 1 ? "ies" : "y"}
                   </p>
                 </Link>
@@ -137,7 +137,7 @@ function ThreadCard({
           ))}
 
           <Link href={`/thread/${id}`}>
-            <p className='mt-1 text-subtle-medium text-gray-1'>
+            <p className='mt-1 text-subtle-medium text-light-2'>
               {comments.length} repl{comments.length > 1 ? "ies" : "y"}
             </p>
           </Link>
@@ -149,7 +149,7 @@ function ThreadCard({
           href={`/communities/${community.id}`}
           className='mt-5 flex items-center'
         >
-          <p className='text-subtle-medium text-gray-1'>
+          <p className='text-subtle-medium text-light-2'>
             {formatDateString(createdAt)}
             {community && ` - ${community.name} Community`}
           </p>
